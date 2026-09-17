@@ -49,7 +49,7 @@ export function createOrb(canvas: HTMLCanvasElement): Orb {
   geo.setAttribute("position", new THREE.BufferAttribute(pos, 3));
 
   const mat = new THREE.PointsMaterial({
-    color: 0x4ca8e8, size: 0.4, transparent: true, opacity: 0.6,
+    color: 0xff6b35, size: 0.4, transparent: true, opacity: 0.6,
     sizeAttenuation: true, blending: THREE.AdditiveBlending, depthWrite: false,
   });
 
@@ -64,7 +64,7 @@ export function createOrb(canvas: HTMLCanvasElement): Orb {
   lineGeo.setDrawRange(0, 0);
 
   const lineMat = new THREE.LineBasicMaterial({
-    color: 0x4ca8e8, transparent: true, opacity: 0.0,
+    color: 0xff6b35, transparent: true, opacity: 0.0,
     blending: THREE.AdditiveBlending, depthWrite: false,
   });
 
@@ -304,10 +304,10 @@ export function createOrb(canvas: HTMLCanvasElement): Orb {
     mat.opacity = currentBright + bass * 0.08;
     mat.size = currentSize + bass * 0.05;
 
-    const thinkingColor = new THREE.Color(0x6ec4ff);
-    const speakingColor = new THREE.Color(0x5ab8f0);
-    const compactingColor = new THREE.Color(0x3a5f8a);
-    const idleColor = new THREE.Color(0x4ca8e8);
+    const thinkingColor = new THREE.Color(0xff8c42);
+    const speakingColor = new THREE.Color(0xff6b35);
+    const compactingColor = new THREE.Color(0xcc3300);
+    const idleColor = new THREE.Color(0xff6b35);
 
     if (state === "thinking") { 
       mat.color.lerp(thinkingColor, 0.015); 
