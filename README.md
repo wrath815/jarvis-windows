@@ -49,7 +49,7 @@ Microphone → Chrome Web Speech API → WebSocket → FastAPI (server.py)
 ## Setup
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/jarvis-windows.git
+git clone https://github.com/wrath815/jarvis-windows.git
 cd jarvis-windows
 
 # Backend
